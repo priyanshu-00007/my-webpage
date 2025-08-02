@@ -1,0 +1,105 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+    box-sizing:border-box;
+    font-family:'monospace';
+       color: white;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#nav{
+    height: 110px;
+    width: 100%;
+    gap: 45px;
+    display: flex;
+    padding: 0 135px;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: large;
+    position: fixed; 
+    z-index: 99;
+}
+#nav img{
+    height: 70px;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+}
+#main{
+position: relative;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.329);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+     position:relative; 
+ }
+#page1 h1{
+    font-size:120px;
+    font-weight: 50px;
+    position: relative;
+    color: black;
+    -webkit-text-stroke: 2px rgb(170, 255, 1);
+}
+#page1 h1::after{
+    content: "EAT. DRINK. PLAY.";
+    position: absolute; 
+    color:rgb(247, 243, 243);
+    bottom: -5px;
+    right: -5px; 
+    -webkit-text-stroke: 2px rgb(255, 255, 255); 
+}  
+#page2{
+    height: 100vh;
+    width: 100%;
+}  
+#scrol-text{
+    font-weight: 20px;
+    font-size: 150px;
+    color: black;
+-webkit-text-stroke: 3px white;
+paint-order: stroke fill; /* Ensures border renders behind fill */
+font-weight: 600;
+} 
+
+  
+  .light {
+    position: absolute;
+    width:  50%;
+    height: 50% ;
+    background: radial-gradient(
+      circle,
+      rgba(0, 255, 0, 0.7) 20%,
+      rgba(0, 255, 0, 0.2) 50%,
+      transparent 50%
+    );
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    filter: blur(15px);
+    mix-blend-mode: screen;
+    z-index: 100;
+  }
+  
+  .cursor-highlight {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: rgba(0, 255, 0, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    /* filter: blur(px); */
+    z-index: 101;
+  } 
+    
